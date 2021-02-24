@@ -7,7 +7,7 @@ function showName() {
 }
 
 function phoneCall(){
-  const phone = document.getElementById('phone').innerHTML;
+  const phone = $('#phone').html();
   if(confirm('Do you want to call this number?' + phone)){
     $('#phone').html(manipulatePhoneNo(phone));
    //document.getElementById('phone').innerHTML = manipulatePhoneNo(phone);
@@ -19,21 +19,21 @@ function manipulatePhoneNo(phone) {
 }
 
 function hidePhoto(){
-  if(!document.getElementById('pic').classList.contains('hide')){
-    document.getElementById('pic').classList.add('hide');
-    document.getElementById('hideTxt').innerHTML = 'Show Photo!';
+  if(!$('#pic').hasClass('hide')){
+    $('#pic').addClass('hide');
+    $('#hideTxt').html('Show Photo!');
   }else{
-    document.getElementById('pic').classList.remove('hide');
-    document.getElementById('hideTxt').innerHTML = 'Hide Photo!';
+    $('#pic').removeClass('hide');
+    $('#hideTxt').html('Hide Photo!') ;
   }
 }
 
 function bouncePhoto(){
-  if(!document.getElementById('pic').classList.contains('bounce')){
-    document.getElementById('pic').classList.add('bounce');
-    document.getElementById('bounceTxt').innerHTML = 'Stop Bounce!';
+  if(!$('#pic').hasClass('bounce')){
+    $('#pic').addClass('bounce');
+    $('#bounceTxt').html('Stop Bounce!');
   }else{
-    document.getElementById('pic').classList.remove('bounce');
-    document.getElementById('bounceTxt').innerHTML = 'Bounce!';
+    $('#pic').removeClass('bounce');
+    $('#bounceTxt').html('Bounce!');
   } 
 }
