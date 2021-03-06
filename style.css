@@ -19,7 +19,6 @@
 
 .pic {
   width: 150px;
-  margin-left: 25%;
   border-radius: 50%;
 }
 
@@ -28,9 +27,7 @@
 }
 
 .left {
-  flex: 45%;
   background-color:#F4D4C4;
-  padding: 10px;
 }
 
 .right {
