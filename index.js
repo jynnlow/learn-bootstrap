@@ -19,11 +19,11 @@ function manipulatePhoneNo(phone) {
 }
 
 function hidePhoto(){
-  if(!$('#pic').hasClass('hide')){
-    $('#pic').addClass('hide');
+  if(!$('#pic').hasClass('d-none')){
+    $('#pic').addClass('d-none');
     $('#hideTxt').html('Show Photo!');
   }else{
-    $('#pic').removeClass('hide');
+    $('#pic').removeClass('d-none');
     $('#hideTxt').html('Hide Photo!') ;
   }
 }
